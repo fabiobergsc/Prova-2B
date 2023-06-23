@@ -1,0 +1,14 @@
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import Register from './src/Components/pages/Register';
+
+const Stack = createNativeStackNavigator();
+
+export default function AuthRoutes(){
+    return (
+        <Stack.Navigator>
+          <Stack.Screen name ='Register' component = {Register} options={{headerShown: false}}/>
+          
+        </Stack.Navigator>
+
+    );
+}
